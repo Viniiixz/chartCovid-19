@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Covid-19</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+        <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+</head>
+<body>
+
+    <div id="mySidemenu" class="sidemenu">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeNav()">&times;</a>
+        <a href="">Home</a>
+        <a href="">Registros</a>
+        <a href="">Charts</a>
+      </div>
+      <div id="main">
+        <button class="btn-open" onclick="openNav()">&#9776;</button>
+        <span></span>
+      
+        <div class="container-fluid">
+
+          <div class="row total">
+            <div class="col-sm-4">
+              <div class="row flex">
+                <h2><small>Casos Confirmados</small><br>‪26.074.609</h2>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row flex">
+                <h2><small>Pessoas Recuperadas</small><br>‪17.337.374‬</h2>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row flex">
+                <h2><small>Total de Mortes</small><br>864.153</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row charts">
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3>Registros por Países</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-6">
+                    <h3>RECUPERADOS(AS)</h3>
+
+                    <div id="chartdiv1"></div>
+                  </div>
+                  <div class="col-sm-6">
+                    <h3>MORTES</h3>
+
+
+                    <div id="chartdiv2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row charts">
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3>Casos por Países</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="chartdiv3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>

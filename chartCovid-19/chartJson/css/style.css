@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ body {
+	 font-family: 'Roboto', sans-serif;
+	 background-color: #212121;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+ .sidemenu {
+	 height: 100vh;
+	 width: 0;
+	 position: fixed;
+	 z-index: 1;
+	 top: 0;
+	 left: 0;
+	 background: #005380;
+	 overflow-x: hidden;
+	 padding-top: 60px;
+	 transition: 0.5s;
+}
+ .sidemenu a {
+	 padding: 15px 8px 15px 32px;
+	 text-decoration: none;
+	 font-size: 18px;
+	 color: #879a9c;
+	 display: block;
+	 transition: 0.3s;
+}
+ .sidemenu a:hover {
+	 color: #f1f1f1;
+}
+ .sidemenu .btn-close {
+	 position: absolute;
+	 top: 0;
+	 right: 25px;
+	 font-size: 36px;
+	 margin-left: 50px;
+}
+.panel-body{
+	background-color: #ddd;
+}
+ .btn-open {
+	 font-size: 20px;
+	 cursor: pointer;
+	 background: #0076b7;
+	 color: #ddd;
+	 padding: 10px 15px 10px 12px;
+	 border: none;
+	 transition: all 1s;
+}
+ .btn-open:hover {
+	 background: rgba(7, 86, 150, 0.8);
+}
+ .btn-open:focus {
+	 outline: none;
+}
+ #main {
+	 transition: margin-left 0.5s;
+	 padding: 16px 0;
+}
+ .total {
+	 padding: 15px;
+}
+ .total .col-sm-4 {
+	 min-height: 150px;
+	 background: #0076b7;
+	 border-right: 10px solid #fff;
+	 text-align: center;
+}
+ .total .col-sm-4:first-child {
+	 border-radius: 5px 0 0 5px;
+}
+ .total .col-sm-4:last-child {
+	 border-right: none;
+	 border-radius: 0 5px 5px 0;
+}
+ .total .col-sm-4 .flex {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .total .col-sm-4 .flex h2 {
+	 color: #fff;
+	 letter-spacing: 1px;
+}
+ .total .col-sm-4 .flex h2 small {
+	 color: #aaa;
+	 font-size: 14px;
+}
+ .total .col-sm-4 h5 {
+	 color: #888;
+}
+ .charts .panel-default {
+	 border-color: #0076b7;
+}
+ .charts .panel-default .panel-heading {
+	 background: #0076b7;
+	 color: #fff;
+}
+ .charts .panel-default #chartdiv1, .charts .panel-default #chartdiv2, .charts .panel-default #chartdiv3 {
+	 width: 100%;
+	 height: 500px;
+}
+ .charts .panel-default #chartdiv1 .amcharts-chart-div a, .charts .panel-default #chartdiv2 .amcharts-chart-div a, .charts .panel-default #chartdiv3 .amcharts-chart-div a {
+	 display: none !important;
+}
+ .pl0 {
+	 padding-left: 0;
+}
+ .pr0 {
+	 padding-right: 0;
+}
+ 
